@@ -1,0 +1,78 @@
+@font-face {
+  font-family: 'Gaegu';
+  src: url('../fonts/gaegu-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background-color: #1F1D1D;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2, h3 {
+  text-transform: lowercase;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.card {
+  background-color: #2D2D2D;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  color: white;
+  width: 400px;
+  a {
+    color: pink;
+  }
+  li {
+    line-height: 1.2;
+    padding-bottom: 0.75rem;
+  }
+}
+.card:has(#prompt) {
+  max-width: fit-content;
+}
+/* on mobile */
+@media (max-width: 600px) {
+  .card {
+    max-width: calc(100% - 5rem);
+  }
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: lowercase;
+}
+#prompt {
+  font-family: 'Gaegu', Arial, Helvetica, sans-serif;
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 5rem;
+  margin: 0;
+  color: paleturquoise;
+  padding: 2rem;
+  line-height: 0.75;
+}

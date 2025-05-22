@@ -3,92 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your site description here">
-    <title>Welcome to Our Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Favicon -->
+    <meta name="description" content="Make something everyday, with a daily prompt to get you started.">
+    <title>Mako</title>
+    <link rel="preload" href="/assets/fonts/gaegu-bold.woff" as="font" type="font/woff" crossorigin>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Font Awesome for icons (optional) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-      @font-face {
-        font-family: 'Gaegu';
-        src: url('fonts/gaegu-bold.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-        font-display: swap;
-      }
-      body {
-        background-color: #1F1D1D;
-      }
-      h1, h2 {
-        font-family: 'Gaegu', sans-serif;
-        text-transform: lowercase;
-        color: white;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-      }
-      h1 {
-        font-size: 10.125rem;
-        letter-spacing: -0.625rem;
-      }
-      h2 {
-        font-size: 4rem;
-      }
-      .subheading {
-        margin-top: -3.75rem;
-      }
-
-            /* Card Styles */
-      .card-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 3rem;
-      }
-
-      .card {
-        background-color: #2D2D2D;
-        border-radius: 1rem;
-        padding: 1.5rem;
-        width: 300px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease;
-      }
-
-      .card:hover {
-        transform: translateY(-5px);
-      }
-
-      .card-title {
-        font-family: 'Gaegu', sans-serif;
-        font-size: 2rem;
-        color: white;
-        margin-bottom: 1rem;
-        text-transform: lowercase;
-      }
-
-      .card-content {
-        color: #E0E0E0;
-        font-size: 1rem;
-        line-height: 1.5;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="app.js" type="module" defer></script>
 </head>
 <body>
-<head>
-  <h1>Mako</h1>
-  <h2 class="subheading">Create what you want</h2>
-</head>
-<main>
-  <div class="card-container">
-    <div class="card">
-      <h3 class="card-title">Day 1</h3>
-      <p class="card-content">
-        cactus
-      </p>
+  <header>
+    <h1>Mako</h1>
+    <h2 class="subheading">Make something everyday</h2>
+  </header>
+  <main>
+    <div class="card-container">
+      <div class="card">
+        <h3 class="card-title" id="dayCount">...</h3>
+        <p id="prompt">
+          ...
+        </p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">About</h3>
+        <p>
+          Every day you'll find a prompt here. Feel free to do whatever you want with it!
+        </p>
+        </div>
+        <div class="card">
+        <h3 class="card-title">Some helpful tips</h3>
+        <ul>
+          <li>Search for some royalty-free inspiration on <a href="https://unsplash.com/">unsplash</a></li>
+          <li>Find a colour palette at <a href="https://coolors.co/">coolors.co</a></li>
+          <li>Consider giving yourself some constraints, like limiting yourself to two colours or only doing blind continuous line drawings</li>
+          <li>Find a way to make it playful, like drawing the prompt once from your imagination/memory and then again from a reference photo</li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div></div>
-</main>
+  </main>
 </body>
