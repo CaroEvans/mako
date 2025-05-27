@@ -8,7 +8,6 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 async function loadPrompt() {
   var seedDate = new Date(2025, 4, 27, 0, 0, 0, 0);
-  console.log("Seed date:", seedDate);
   
   function Na(e, a) {
       var s = new Date(e),
