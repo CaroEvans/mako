@@ -12,7 +12,6 @@ async function loadPrompt() {
   function Na(e, a) {
       var s = new Date(e),
           t = new Date(a).setHours(0, 0, 0, 0) - s.setHours(0, 0, 0, 0);
-          console.log(Math.floor(t / (1000 * 60 * 60 * 24)));
 
       return Math.round(t / 864e5);
   }
