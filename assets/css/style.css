@@ -15,7 +15,7 @@
 
 body {
   background-color: #1F1D1D;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Monaco, Courier, monospace;
 }
 
 h1, h2, h3 {
@@ -62,8 +62,9 @@ ul {
   transform: translateY(-5px);
 }
 .card-title {
+  color: black;
+  background-color: #A4A8AC;
   font-weight: 600;
-  color: white;
   text-align: center;
   font-size: 1.125rem;
   text-transform: lowercase;
@@ -80,7 +81,7 @@ ul {
   padding: 0 1.5rem;
   p {
     line-height: 1.2;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Monaco, Courier, monospace;
   }
 }
 #prompt {
@@ -106,10 +107,14 @@ ul {
 }
 @media (max-width: 37.5rem) {
   .card-title {
-    color: black;
-    background-color: #A4A8AC;
+    color: white;
+    background: none;
   }
   .card {
     max-width: calc(100% - 3rem);
   }
+}
+footer {
+  text-align: center;
+  color: white;
 }

@@ -15,10 +15,10 @@ async function loadPrompt() {
 
       return Math.round(t / 864e5);
   }
-  function findDayCount(seedDate, e) {
-    var s = new Date(e),
-        t = new Date(seedDate).setHours(0, 0, 0, 0) - s.setHours(0, 0, 0, 0);
-    return Math.floor(t / (1000 * 60 * 60 * 24)) + 1;
+  function findDayCount(todayDate, seedDate) {
+    const seed = new Date(seedDate)
+    const today = new Date(todayDate).setHours(0, 0, 0, 0) - seed.setHours(0, 0, 0, 0);
+    return Math.floor(today / (1000 * 60 * 60 * 24)) + 1;
   }
   function Da(e) {
       var a,
