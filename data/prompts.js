@@ -373,4 +373,8 @@ export const promptList = [
   "Mandala",
   "Anchor",
   "Zombie",
+  "Gladiolus",
+  "Sparkler",
+  "Axolotl",
+  "Hydrangea"
 ]
