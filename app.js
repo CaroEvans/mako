@@ -1,12 +1,13 @@
 
 import { promptList } from './data/prompts.js';
 
+if (document.readyState !== 'loading') {    
+  loadPrompt();
+} else {    
+  document.addEventListener('DOMContentLoaded', function () { loadPrompt() });
+}
 
-window.addEventListener('DOMContentLoaded', async () => {
-  await loadPrompt();
-});
-
-async function loadPrompt() {
+function loadPrompt() {
   var seedDate = new Date(2025, 4, 27, 0, 0, 0, 0);
   
   function Na(e, a) {
